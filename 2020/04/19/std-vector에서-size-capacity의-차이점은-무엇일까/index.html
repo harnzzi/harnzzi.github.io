@@ -21,7 +21,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://raw.githubusercontent.com/harnzzi/harnzzi.github.io/master/2020/04/19/std-vector%EC%97%90%EC%84%9C-size-capacity%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90%EC%9D%80-%EB%AC%B4%EC%97%87%EC%9D%BC%EA%B9%8C/1.PNG">
 <meta property="article:published_time" content="2020-04-19T10:36:55.000Z">
-<meta property="article:modified_time" content="2020-04-19T11:25:10.215Z">
+<meta property="article:modified_time" content="2020-04-19T11:29:36.916Z">
 <meta property="article:author" content="hamzzi">
 <meta property="article:tag" content="C++11">
 <meta property="article:tag" content="standard">
@@ -221,7 +221,7 @@ ga('send', 'pageview');
 <p> 즉, 새로운 원소를 추가할 때</p>
 <ol>
 <li><strong>capacity &gt; size</strong><br>맨 뒤 공간에 원소를 복사한 뒤 ++size만 일어난다. (<em>O(1)</em>)</li>
-<li><strong>capacity == size</strong><br>capacity가 증가한 새로운 연속된 공간을 할당하고, 기존의 원소를 모두 복사하고 기존 정보는 지운다. capacity &gt; size인 상황으로 만든 후 1번 과정을 다시 진행한다.</li>
+<li><strong>capacity == size</strong><br>capacity가 증가한 새로운 연속된 공간을 할당하고, 기존의 원소를 모두 복사하고 기존 정보는 지운다. capacity &gt; size인 상황으로 만든 후 1번 과정을 다시 진행한다. (<em>O(n)</em>)</li>
 </ol>
 <hr>
 <h1 id="resize와-reserve"><a href="#resize와-reserve" class="headerlink" title="resize와 reserve"></a>resize와 reserve</h1><p> 위에서 보았듯이, <strong>reserve</strong>에서는 capacity를 우리가 원하는 크기로 할당 가능하게 한다. <br><br> <strong>resize</strong>는 원하는 수 만큼 원소를 생성한다. 또한 증가되는 size만큼 복사 생성자가 호출된다는 점이 있다(In c++11). </p>
@@ -320,7 +320,7 @@ ga('send', 'pageview');
         "description": " std::vector, std::string에서는 길이 리턴이 가능하다. string에서는 length, size모두 사용 가능하며, vector에서는 size를 사용하면 되겠다. 그런데 갑자기 인텔리센스(자도완성)에서 보이는 capacity… size와 차이가 무엇일까?
 
 size와 capacity  위 그림과 같이, capacity는 vector의 t",
-        "wordCount": 348
+        "wordCount": 349
     }
 </script>
 
