@@ -9,8 +9,21 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>서두르지 말고, 그러나 쉬지도 말고 - 괴테</description>
-    <pubDate>Sun, 19 Apr 2020 11:34:20 GMT</pubDate>
+    <pubDate>Sun, 19 Apr 2020 12:04:35 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>BOJ::9207{페그솔테리어};</title>
+      <link>https://harnzzi.github.io/2020/04/19/BOJ-9207-%ED%8E%98%EA%B7%B8%EC%86%94%ED%85%8C%EB%A6%AC%EC%96%B4/</link>
+      <guid>https://harnzzi.github.io/2020/04/19/BOJ-9207-%ED%8E%98%EA%B7%B8%EC%86%94%ED%85%8C%EB%A6%AC%EC%96%B4/</guid>
+      <pubDate>Sun, 19 Apr 2020 12:03:09 GMT</pubDate>
+      <description>
+      
+      </description>
+      
+      
+      <comments>https://harnzzi.github.io/2020/04/19/BOJ-9207-%ED%8E%98%EA%B7%B8%EC%86%94%ED%85%8C%EB%A6%AC%EC%96%B4/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>std::vector에서 size, capacity의 차이점은 무엇일까?</title>
@@ -72,7 +85,7 @@
     </item>
     
     <item>
-      <title>Linux Kernel에 대하여...</title>
+      <title>Linux Kernel에 대하여...(수정중)</title>
       <link>https://harnzzi.github.io/2020/03/18/Linux-Kernel%EC%97%90-%EB%8C%80%ED%95%98%EC%97%AC/</link>
       <guid>https://harnzzi.github.io/2020/03/18/Linux-Kernel%EC%97%90-%EB%8C%80%ED%95%98%EC%97%AC/</guid>
       <pubDate>Wed, 18 Mar 2020 12:53:56 GMT</pubDate>
