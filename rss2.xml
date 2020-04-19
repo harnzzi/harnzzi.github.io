@@ -9,7 +9,7 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>서두르지 말고, 그러나 쉬지도 말고 - 괴테</description>
-    <pubDate>Sun, 19 Apr 2020 11:10:37 GMT</pubDate>
+    <pubDate>Sun, 19 Apr 2020 11:11:54 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -27,7 +27,7 @@
       </description>
       
       
-      <content:encoded><![CDATA[<p> std::vector, std::string에서는 길이 리턴이 가능하다. string에서는 length, size모두 사용 가능하며, vector에서는 size를 사용하면 되겠다. 그런데 갑자기 인텔리센스(자도완성)에서 보이는 capacity… size와 차이가 무엇일까?</p><hr><h1 id="size와-capacity"><a href="#size와-capacity" class="headerlink" title="size와 capacity"></a>size와 capacity</h1><p> <img src="https://raw.githubusercontent.com/harnzzi/harnzzi.github.io/master/2020/04/19/std-vector%EC%97%90%EC%84%9C-size-capacity%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90%EC%9D%80-%EB%AC%B4%EC%97%87%EC%9D%BC%EA%B9%8C/1.PNG" alt="size and capacity"><br> 위 그림과 같이, capacity는 vector의 type 또는 string의 각 character type들을 담을 수 있는 메모리가 할당되어 있는 공간의 용량이다. <br>보통, capacity는 현재 가지고 있는 원소의 개수(size, length)보다 더 많은 공간을 할당해 놓고 있다.<br> 일반적으로 string에서는 8bytes를 미리 확보하고, 그보다 length가 더 길다면 32bytes, … 순으로 증가하는 것으로 보인다(이는 컴퓨터 구조, os등에 따라 차이가 보여질 수 있다). <br>따라서, 새로운 원소를 추가할 때(push_back) capacity가 size보다 크다면, <em>O(1)</em>로 새로운 원소를 추가하거나 지울 수 있게 된다.</p>]]></content:encoded>
+      <content:encoded><![CDATA[<p> std::vector, std::string에서는 길이 리턴이 가능하다. string에서는 length, size모두 사용 가능하며, vector에서는 size를 사용하면 되겠다. 그런데 갑자기 인텔리센스(자도완성)에서 보이는 capacity… size와 차이가 무엇일까?</p><hr><h1 id="size와-capacity"><a href="#size와-capacity" class="headerlink" title="size와 capacity"></a>size와 capacity</h1><p> <img src="https://raw.githubusercontent.com/harnzzi/harnzzi.github.io/master/2020/04/19/std-vector%EC%97%90%EC%84%9C-size-capacity%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90%EC%9D%80-%EB%AC%B4%EC%97%87%EC%9D%BC%EA%B9%8C/1.PNG" alt="size and capacity"><br> 위 그림과 같이, capacity는 vector의 type 또는 string의 각 character type들을 담을 수 있는 메모리가 할당되어 있는 공간의 용량이다. <br>보통, capacity는 현재 가지고 있는 원소의 개수(size, length)보다 더 많은 공간을 할당해 놓고 있다.<br> 일반적으로 string에서는 8bytes를 미리 확보하고, 그보다 length가 더 길다면 32bytes, … 순으로 증가하는 것으로 보인다(이는 컴퓨터 구조, os등에 따라 차이가 보여질 수 있다). <br><br>따라서, 새로운 원소를 추가할 때(push_back) capacity가 size보다 크다면, <em>O(1)</em>로 새로운 원소를 추가하거나 지울 수 있게 된다.</p>]]></content:encoded>
       
       <comments>https://harnzzi.github.io/2020/04/19/std-vector%EC%97%90%EC%84%9C-size-capacity%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90%EC%9D%80-%EB%AC%B4%EC%97%87%EC%9D%BC%EA%B9%8C/#disqus_thread</comments>
     </item>
