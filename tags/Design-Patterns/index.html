@@ -6,14 +6,14 @@
     
 
     
-    <title>Tag: Scheduling | hamlog</title>
+    <title>Tag: Design Patterns | hamlog</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="description" content="서두르지 말고, 그러나 쉬지도 말고 - 괴테">
 <meta property="og:type" content="website">
 <meta property="og:title" content="hamlog">
-<meta property="og:url" content="https://harnzzi.github.io/tags/Scheduling/index.html">
+<meta property="og:url" content="https://harnzzi.github.io/tags/Design-Patterns/index.html">
 <meta property="og:site_name" content="hamlog">
 <meta property="og:description" content="서두르지 말고, 그러나 쉬지도 말고 - 괴테">
 <meta property="og:locale" content="en_US">
@@ -162,7 +162,7 @@ ga('send', 'pageview');
                         <div class="main-body-header">
     <h1 class="header">
     
-    <i class="icon fa fa-tag"></i>Tag: <em>Scheduling</em>
+    <i class="icon fa fa-tag"></i>Tag: <em>Design Patterns</em>
     </h1>
 </div>
 
@@ -188,44 +188,23 @@ ga('send', 'pageview');
         
         <div class="article-meta">
             <div class="category">
-            <a class="article-category-link" href="/categories/Operating-System/">Operating System</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Operating-System/RTOS/">RTOS</a>
+            <a class="article-category-link" href="/categories/Design-Patterns/">Design Patterns</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/Design-Patterns/Behavioral-Patterns/">Behavioral Patterns</a>
             </div>
-            <div class="date"><time datetime="2020-02-24T15:46:02.000Z" itemprop="datePublished">2020-02-25</time></div>
+            <div class="date"><time datetime="2020-05-31T11:47:55.000Z" itemprop="datePublished">2020-05-31</time></div>
         </div>
         
     
         <h1 class="article-title" itemprop="name">
-        <a href="/2020/02/25/RTOS%EC%99%80-GTOS-%EC%8A%A4%EC%BC%80%EC%A5%B4%EB%A7%81-%ED%8E%B8/">RTOS와 GTOS &lt;스케쥴링&gt; 편</a>
+        <a href="/2020/05/31/Memento/">Memento</a>
         </h1>
     
 
         <p class="article-excerpt">
-            RTOS(Real Time Operating System)과, 일반적으로 OS라고 불리우는 GPOS(General Purpose Operating System)에 대해서 알아봅니다.
-
-
-
-
-RTOS
-GPOS
-
-
-
-우선순위 기반 스케쥴링
-우선순위 보다는 스레드와 프로세스 모두 동일한 순서로 수행. 즉, 높은 스루풋을 기준으로 처리
-
-
-프로그램이 실행되는 시간이 중요한 시스템에 적합
-동시에 많은 응용 프로그램을 실행하기에 좋음. 우선순위가 높은 하나의 작업을 해야하는 프로세스가 있다고 하더라도, 우선순위가 낮은 여러개의 작업을 먼저 수행할 수 있음(preemptive/non-preemptive)
-
-
-항상 우선순위를 기반으로 하고(preemptive), 우선순위가 높은 프로세스를 실행할 때 동안 낮은 우선순위를 가진 프로세스는 실행되지 않음
-
-
-
-OS는 스케쥴링된 스레드가 많을수록 latency가 생길 수 있는데, RTOS의 경우 프로세스와 스레드가 모두 지정된 시간 제한 내에 실행되어야 하기 때문에 latency가 없음
-
-
-
+            Memento Pattern의 취지와 목적은?
+Memento는 구현 세부 사항을 밝히지 않고 객체의 이전 상태를 저장하고 복원 할 수있는 행동 설계 패턴이다.
+즉, private한 field들의 상태를 바꾸지 않고(public이나, protected 등..), 객체들에게 접근 용이하도록 만들기 위한 패턴이다.
+다음의 예제를 보며 이해하도록 한다.
+Probl
         </p>
     </div>
 </article>
