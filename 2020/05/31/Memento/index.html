@@ -20,7 +20,7 @@
 <meta property="og:description" content="Memento Pattern의 취지와 목적은? Memento는 구현 세부 사항을 밝히지 않고 객체의 이전 상태를 저장하고 복원 할 수있는 행동 설계 패턴이다. 즉, private한 field들의 상태를 바꾸지 않고(public이나, protected 등..), 객체들에게 접근 용이하도록 만들기 위한 패턴이다. 다음의 예제를 보며 이해하도록 한다. Probl">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-05-31T11:47:55.000Z">
-<meta property="article:modified_time" content="2020-05-31T11:55:16.988Z">
+<meta property="article:modified_time" content="2020-05-31T11:58:52.729Z">
 <meta property="article:author" content="hamzzi">
 <meta property="article:tag" content="Design Patterns">
 <meta property="article:tag" content="Memento">
@@ -266,7 +266,26 @@ ga('send', 'pageview');
 <p>The caretaker, whether it represents a command object, a history, or something entirely different, should know when to request new mementos from the originator, how to store them and when to restore the originator with a particular memento.</p>
 <p>The link between caretakers and originators may be moved into the memento class. In this case, each memento must be connected to the originator that had created it. The restoration method would also move to the memento class. However, this would all make sense only if the memento class is nested into originator or the originator class provides sufficient setters for overriding its state.</p>
 <h1 id="Pros-and-Cons"><a href="#Pros-and-Cons" class="headerlink" title="Pros and Cons"></a>Pros and Cons</h1><hr>
-<p>|:—:|:—:|<br>|캡슐화를 위반하지 않고 객체 상태의 스냅 샷을 생성 할 수 있다.|클라이언트가 memento를 너무 자주 생성하게 된다면 앱에서 많은 RAM을 소비할 수 있게 된다.|<br>|Caretaker가 originator의 상태의 history를 유지하도록 하여 originator의 코드를 단순화 할 수 있다.|Caretaker는 사용하지 않는 memento를 destroy할 수 있도록 originator의 lifecycle을 추적해야 한다.||<br>|PHP, Python 및 JS와 같은 대부분의 동적 프로그래밍 언어는 memento내의 상태가 그대로 유지되도록 보장할 수 없다.||</p>
+<table>
+<thead>
+<tr>
+<th align="center">Pros</th>
+<th align="center">Cons</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">캡슐화를 위반하지 않고 객체 상태의 스냅 샷을 생성 할 수 있다.</td>
+<td align="center">클라이언트가 memento를 너무 자주 생성하게 된다면 앱에서 많은 RAM을 소비할 수 있게 된다.</td>
+</tr>
+<tr>
+<td align="center">Caretaker가 originator의 상태의 history를 유지하도록 하여 originator의 코드를 단순화 할 수 있다.</td>
+<td align="center">Caretaker는 사용하지 않는 memento를 destroy할 수 있도록 originator의 lifecycle을 추적해야 한다.</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">PHP, Python 및 JS와 같은 대부분의 동적 프로그래밍 언어는 memento내의 상태가 그대로 유지되도록 보장할 수 없다.</td>
+</tr>
+</tbody></table>
 <h1 id="Relations-with-Other-Patterns"><a href="#Relations-with-Other-Patterns" class="headerlink" title="Relations with Other Patterns"></a>Relations with Other Patterns</h1><hr>
 <p>Undo 구현 시 Command와 Memento를 함께 사용할 수 있다. 이 경우 Command는 target object에 대해 다양한 작업을 수행하는 반면에, Memento는 command가 실행되기 전에 해당 object의 상태를 저장한다.<br>Iterator와 함께 Memento를 사용하여 현재 iteration state를 캡처한 후 필요한 경우 roll back할 수 있다.<br>때때로 프로토타입은 memento의 간단한 대안점이 될 수 있다. 이는 history에서 저장하고자 하는 상태인 object가 상당히 간단하고, 외부 자원(external resources)과 연결된 것이 없거나 또는 link를 재설정(re-establish)하기 쉬운 경우에 작동한다.</p>
 
@@ -359,7 +378,7 @@ Memento는 구현 세부 사항을 밝히지 않고 객체의 이전 상태를 �
 즉, private한 field들의 상태를 바꾸지 않고(public이나, protected 등..), 객체들에게 접근 용이하도록 만들기 위한 패턴이다.
 다음의 예제를 보며 이해하도록 한다.
 Probl",
-        "wordCount": 1641
+        "wordCount": 1649
     }
 </script>
 
